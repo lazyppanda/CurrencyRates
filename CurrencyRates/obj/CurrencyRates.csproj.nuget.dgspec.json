@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\1\\source\\repos\\CurrencyRates\\CurrencyRates\\CurrencyRates.csproj": {}
+    "C:\\Users\\tspkmo2\\Desktop\\CR\\CurrencyRates\\CurrencyRates\\CurrencyRates.csproj": {}
   },
   "projects": {
-    "C:\\Users\\1\\source\\repos\\CurrencyRates\\CurrencyRates\\CurrencyRates.csproj": {
+    "C:\\Users\\tspkmo2\\Desktop\\CR\\CurrencyRates\\CurrencyRates\\CurrencyRates.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\1\\source\\repos\\CurrencyRates\\CurrencyRates\\CurrencyRates.csproj",
+        "projectUniqueName": "C:\\Users\\tspkmo2\\Desktop\\CR\\CurrencyRates\\CurrencyRates\\CurrencyRates.csproj",
         "projectName": "CurrencyRates",
-        "projectPath": "C:\\Users\\1\\source\\repos\\CurrencyRates\\CurrencyRates\\CurrencyRates.csproj",
-        "packagesPath": "C:\\Users\\1\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\1\\source\\repos\\CurrencyRates\\CurrencyRates\\obj\\",
+        "projectPath": "C:\\Users\\tspkmo2\\Desktop\\CR\\CurrencyRates\\CurrencyRates\\CurrencyRates.csproj",
+        "packagesPath": "C:\\Users\\tspkmo2\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\tspkmo2\\Desktop\\CR\\CurrencyRates\\CurrencyRates\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\1\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\tspkmo2\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -61,6 +61,10 @@
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
               "version": "[2.2.3, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.2, )"
             }
           },
           "imports": [
