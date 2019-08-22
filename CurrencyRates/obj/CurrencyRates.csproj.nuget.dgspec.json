@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\tspkmo2\\Desktop\\CR\\CurrencyRates\\CurrencyRates\\CurrencyRates.csproj": {}
+    "C:\\Users\\tspkmo2\\Desktop\\CurrencyRates\\CurrencyRates\\CurrencyRates.csproj": {}
   },
   "projects": {
-    "C:\\Users\\tspkmo2\\Desktop\\CR\\CurrencyRates\\CurrencyRates\\CurrencyRates.csproj": {
+    "C:\\Users\\tspkmo2\\Desktop\\CurrencyRates\\CurrencyRates\\CurrencyRates.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\tspkmo2\\Desktop\\CR\\CurrencyRates\\CurrencyRates\\CurrencyRates.csproj",
+        "projectUniqueName": "C:\\Users\\tspkmo2\\Desktop\\CurrencyRates\\CurrencyRates\\CurrencyRates.csproj",
         "projectName": "CurrencyRates",
-        "projectPath": "C:\\Users\\tspkmo2\\Desktop\\CR\\CurrencyRates\\CurrencyRates\\CurrencyRates.csproj",
+        "projectPath": "C:\\Users\\tspkmo2\\Desktop\\CurrencyRates\\CurrencyRates\\CurrencyRates.csproj",
         "packagesPath": "C:\\Users\\tspkmo2\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\tspkmo2\\Desktop\\CR\\CurrencyRates\\CurrencyRates\\obj\\",
+        "outputPath": "C:\\Users\\tspkmo2\\Desktop\\CurrencyRates\\CurrencyRates\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
