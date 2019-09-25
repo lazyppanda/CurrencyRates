@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace CurrencyRates.Controllers
 {
-    internal class JsonApi
+    public class CbrJsonData
     {
         public DateTime Date { get; set; }
         public DateTime PreviousDate { get; set; }

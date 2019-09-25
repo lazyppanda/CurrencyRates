@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Net;
 using System.Threading.Tasks;
+using CurrencyRates.Models.externalAPIs.CBR;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 
@@ -10,6 +11,8 @@ namespace CurrencyRates.Controllers
 {
     public class CurrencyRateController : Controller
     {
+
+        CbrJson cbrJson = CbrJson.Create();
         string[] valutes ={ "AUS",
                             "AZN",
                             "GBP",
@@ -45,18 +48,12 @@ namespace CurrencyRates.Controllers
                             "KRW",
                             "JPY",
         };
-        string ApiLink = "https://www.cbr-xml-daily.ru/daily_json.js";
+
         // GET: /<controller>/
         public IActionResult Index()
         {
-            using (WebClient wc = new WebClient())
-            {
-                var json = wc.DownloadString(ApiLink);
-                JsonApi Rates = JsonConvert.DeserializeObject<JsonApi>(json);
-                ViewData["Valutes"] =  valutes;
-                ViewData["Rates"] = Rates;
-            }
-                return View();
+            CbrJsonData rates = cbrJson.GetRates();
+            return View();
         }
     }
 }
