@@ -9,7 +9,6 @@ namespace CurrencyRates.Controllers
         public DateTime PreviousDate { get; set; }
         public string PreviousURL { get; set; }
         public DateTime Timestamp { get; set; }
-
         public IDictionary<string, Rate> Valute { get; set; }
     }
 

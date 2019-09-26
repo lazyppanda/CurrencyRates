@@ -1,18 +1,20 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net;
-using System.Threading.Tasks;
+﻿using CurrencyRates.Models;
 using CurrencyRates.Models.externalAPIs.CBR;
 using Microsoft.AspNetCore.Mvc;
-using Newtonsoft.Json;
+using System.Linq;
 
 namespace CurrencyRates.Controllers
 {
     public class CurrencyRateController : Controller
     {
+        CurrencyRatesContext db;
+        CbrJson cbrJson;
+        public CurrencyRateController(CurrencyRatesContext context)
+        {
+            db = context;
+            cbrJson = CbrJson.Create(db);
+        }
 
-        CbrJson cbrJson = CbrJson.Create();
         string[] valutes ={ "AUS",
                             "AZN",
                             "GBP",
@@ -52,7 +54,8 @@ namespace CurrencyRates.Controllers
         // GET: /<controller>/
         public IActionResult Index()
         {
-            CbrJsonData rates = cbrJson.GetRates();
+            CurrencyRate last = db.CurrencyRates.OrderByDescending(o => o.Id).FirstOrDefault();
+
             return View();
         }
     }
